@@ -1,63 +1,33 @@
 <html>
   <head>
-    <title>ES 3</title>
-</head>
-  
-<form name="Calculator" >
-
-
-   <input type="button" value="1" 
-    onClick="document.calculator.ans.value+='1'">
-
-    <input type="button" value="2" 
-    onClick="document.calculator.ans.value+='2'">
-
-    <input type="button" value="3" 
-    onClick="document.calculator.ans.value+='3'">
-
-    <input type="button" value="4" 
-    onClick="document.calculator.ans.value+='4'">
-
-    <input type="button" value="5" 
-    onClick="document.calculator.ans.value+='5'">
-
-    <input type="button" value="6" 
-    onClick="document.calculator.ans.value+='6'">
-
-    <input type="button" value="7" 
-    onClick="document.calculator.ans.value+='7'">
-
-    <input type="button" value="8" 
-    onClick="document.calculator.ans.value+='8'">
-
-    <input type="button" value="9" 
-    onClick="document.calculator.ans.value+='9'">
-
-    <input type="button" value="0" 
-    onClick="document.calculator.ans.value+='0'"><br>
-
-    <br><input type="button" value="+" 
-    onClick="document.calculator.ans.value+='+'"></br>
-
-    <br><input type="button" value="-" 
-    onClick="document.calculator.ans.value+='-'"></br>
-
-    <br><input type="button" value="*" 
-    onClick="document.calculator.ans.value+='*'"></br>
-
-    <br><input type="button" value="/"
-     onClick="document.calculator.ans.value+='/'"></br>
-
-    <br><input type="reset" value="Canc"></br>
-
-    <br><input type="button" value="=" 
-    onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"></br>
-
-    Risultato 
-    
-    <input type="textfield" name="ans" value="">
-  
-  
-  </form>
-</body>
+    <title>JS ES 3</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+    </style>
+    <body>
+      <h1>CALCOLATRICE</h1>
+      <table id="tab">
+        <tr>
+          <th>N1</th>
+          <th>Mark</th>
+          <th>N2</th>
+          <th>Result</th>
+        </tr>
+      </table>
+      <input type = "number" id="num1" placeholder="first number"/>
+    </br></br>
+    <input type="number" id="num2" placeholder="second number"/>
+    </br></br>
+      <button id="btnPlus">+</button>
+      <button id="btnSub">-</button>
+      <button id="btnMulti">*</button>
+      <button id="btnDivide">/</button>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="es3.js"></script>
+    </body>
+  </head>
 </html>
